@@ -1,3 +1,53 @@
+/********************************************************
+                    css variable
+********************************************************/
+
+:root {
+    --bla: #000;
+    --darGra: #444;
+    --medGra: #707070;
+    --ligGra: #aaa;
+    --supLiGra: #f5f5f5;
+    --whi: #fff;
+    --blu
+
+}
+
+
+/********************************************************
+                    main
+********************************************************/
+
 body {
-    background-color: red;
+    margin: 0;
+    padding: 0;    
+}
+
+
+
+/********************************************************
+                    navigation
+********************************************************/
+
+nav {
+    position: sticky;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#nav ul li {
+    display: inline-block;
+}
+
+#nav ul li a {
+    text-decoration: none;
+
 }

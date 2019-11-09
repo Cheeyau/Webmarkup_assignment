@@ -237,7 +237,6 @@ h6 {
 main {
     position: relative;
     display: block;
-    height: 4000px;
     width: 100%;;
 }
 
@@ -248,22 +247,22 @@ main {
     transition: transform .5s ease-in-out;
 }
 
-#wel {
+.wel {
     position: relative;
     margin-top: 10%;
     margin-left: 1em;
 }
 
-#wel h1 + h2 {
+.wel h1 + h2 {
     line-height: 90%;
 }
 
-#wel h1 {
+.wel h1 {
     font-weight: bolder;
     line-height: 80%;
 }
 
-#wel h2 {
+.wel h2 {
     font-weight: lighter;
 }
 /*************************************
@@ -276,16 +275,49 @@ main {
     display: flex;
     background-color: var(--whi);
     flex-direction: column;
-    padding: 0 10% 0 10%;
 }
 
-#mainCont {
-    margin: 0;
+#mainCont section {
+    margin: 0 10% 0 10%;
+}
+
+#mainCont footer a {
+    color: var(--blu);
+    text-decoration: none;
+}
+
+#mainCont footer {
+    margin: 0 10% 0 10%;
+}
+
+#mainCont header {
+    margin: 0 10% 0 10%;
+}
+
+#mainCont header h3 {
+    margin: 1em 0 0 0;
 }
 
 #mainCont section p:only-of-type {
     font-size: 15pt;
     line-height: 140%;
     font-weight: 500;
+    margin-top: 0;
 }
+
+.mainAsi {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.mainAsi aside {
+    padding:  0;
+}
+
+
+
+/*************************************
+                    second content
+*************************************/
 

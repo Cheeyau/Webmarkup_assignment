@@ -509,6 +509,13 @@ main {
     .mobile {
         display: none;
     }
+
+    #mainCont header {
+        margin: 1.5em 0% 0 0%;
+    }
+    .bodyText {
+        margin: 0% 10% 0 10% ;
+    }
 }
 
 @media screen and (min-width: 1280px) and (max-width: 8000px) {
@@ -552,6 +559,8 @@ main {
         margin: 0% 10% 0 10% ;
     }
 }
+
+
 
 /*************************************
                     second content
@@ -635,8 +644,6 @@ main {
         flex-wrap: wrap;
         flex-direction: row;
     }
-
-    
 }
 
 /*************************************
@@ -757,6 +764,29 @@ main {
     
 }
 
+@media screen and (min-width: 481px) and (max-width: 1179px) {
+
+    .sportContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
+    .sportItem {
+        margin: 2em 0;
+        width: 43%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .overlayText a:hover p {
+        font-size: 27pt;
+    }
+    
+}
+
 @media screen and (min-width: 1280px) and (max-width: 8000px) {
 
     .sportContainer {
@@ -863,6 +893,25 @@ main {
 }
 
 
+@media screen and (min-width: 481px) and (max-width: 1179px) {
+
+    #refCont {
+        flex-direction: row;
+    }
+    
+    #overlayConRef {
+        flex: 0 0 50%;
+    }
+
+    #overlayConRef {
+        box-sizing: border-box;
+        float: right;
+    }
+    #overlayTextRef a:hover p {
+        font-size: 27pt;
+    }
+}
+
 @media screen and (min-width: 1280px) and (max-width: 8000px) {
 
     #refCont {
@@ -957,6 +1006,40 @@ main {
     color: var(--blu);
     border: #2699fb 3px solid;
     background-color: var(--whi);
+}
+
+@media screen and (min-width: 481px) and (max-width: 1179px) {
+    
+    #conForm fieldset {
+        margin: 1.5em 10% 4em 10%; 
+        padding: 0 5%;
+    }
+
+    #conForm fieldset section {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #conForm fieldset section label {
+        vertical-align: middle;
+        text-align: right;
+        width: 12%;
+        margin-right: .5em;
+    }
+    
+    #conForm fieldset section input {
+        width: 60%;
+    }
+
+    #conForm fieldset section textarea {
+        vertical-align: top;
+        width: 60%;
+    }
+    
+    #conBut button {
+        margin-left: 13%;
+    }
 }
 
 @media screen and (min-width: 1280px) and (max-width: 8000px) {

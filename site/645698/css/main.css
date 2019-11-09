@@ -35,11 +35,13 @@ h2 {
 
 h3 {
     font-size: 35pt;
+    font-weight: bolder;
     font-family: var(--sla27);
 }
 
 h4 {
     font-size: 30pt;
+    font-weight: 100;
     font-family: var(--sla27);
 }
 
@@ -247,22 +249,22 @@ main {
     transition: transform .5s ease-in-out;
 }
 
-.wel {
+#wel {
     position: relative;
     margin-top: 10%;
     margin-left: 1em;
 }
 
-.wel h1 + h2 {
+#wel h1 + h2 {
     line-height: 90%;
 }
 
-.wel h1 {
+#wel h1 {
     font-weight: bolder;
     line-height: 80%;
 }
 
-.wel h2 {
+#wel h2 {
     font-weight: lighter;
 }
 /*************************************
@@ -272,6 +274,8 @@ main {
 
 #mainCont {
     position: relative;
+    width: 100%;
+    
     display: flex;
     background-color: var(--whi);
     flex-direction: column;
@@ -290,11 +294,15 @@ main {
     margin: 0 10% 0 10%;
 }
 
+#mainCont footer h6 {
+    margin: 1em 0;
+}
+
 #mainCont header {
     margin: 0 10% 0 10%;
 }
 
-#mainCont header h3 {
+#mainCont header h4 {
     margin: 1em 0 0 0;
 }
 
@@ -321,3 +329,43 @@ main {
                     second content
 *************************************/
 
+#secCont {
+    position: relative;
+    width: 100%;
+    margin-top: 15em;
+    display: flex;
+    background-color: var(--whi);
+    flex-direction: column;
+}
+
+#secCont section {
+    margin: 0 10% 0 10%;
+}
+
+#secCont footer a {
+    color: var(--blu);
+    text-decoration: none;
+}
+
+#secCont footer {
+    margin: 0 10% 0 10%;
+}
+
+#secCont footer h6 {
+    margin: 1em 0;
+}
+
+#secCont header {
+    margin: 0 10% 0 10%;
+}
+
+#secCont header h4 {
+    margin: 1em 0 0 0;
+}
+
+#secCont section p:only-of-type {
+    font-size: 15pt;
+    line-height: 140%;
+    font-weight: 500;
+    margin-top: 0;
+}

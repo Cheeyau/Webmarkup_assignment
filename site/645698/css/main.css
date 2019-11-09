@@ -117,8 +117,6 @@ a {
     display: block;
     position: fixed;
     float: left;
-    top: 1em;
-    left: 1em;
     z-index: 100;
     -webkit-user-select: none;
     user-select: none;
@@ -182,14 +180,11 @@ a {
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     padding: 3em 0 0 0;
     margin: 0;
     background-color: var(--bla);
     opacity: .95;
+    list-style:none;
     text-align: center;
     font-family: var(--sla27);
     font-size: 20pt;
@@ -200,6 +195,7 @@ a {
 #hamMen input:checked ~ ul
 {
   transform: none;
+  
 }
 
 #men li:first-child {
@@ -211,62 +207,114 @@ a {
 }
 
 #men li a {
+    transition: 1s;
     color: var(--whi);
 }
-@media screen and (min-width: 1280px) and (max-width: 8000px) {
-        
-    nav {
+@media screen and (min-width: 0px) and (max-width: 480px) {
+
+    #hamMen {
+        top: 1em;
+        left: 1em;
+    }
+
+    #men {
         top: 0;
-        margin-top: 20%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1179px) {
+      
+    #hamMen {
+        position: sticky;
+        top: 0;
         width: 100%;
-        width: 100%;
-        -webkit-box-shadow: 0px 15px 89px -10px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 15px 89px -10px rgba(0,0,0,0.75);
-        box-shadow: 0px 15px 89px -10px rgba(0,0,0,0.75);
-    
+        height: 5em;
+        padding: 0;
     }
-    
-    nav ul {
-        padding: 0 10% 0 10%;
+
+    #hamMen input {
+        display: none;
     }
-    
-    nav ul li {
-        margin: 20px 0 20px 0;
-        display: inline-block;
-    }
-    
-    nav ul li a { 
-        font-size: 25pt;    
+
+    #hamMen span {
+        display: none;
     }
     
     #men {
-        position: sticky;
-    }
-    nav ul {
-        margin: 0;
-        padding: 0 10% 0 10%;
+        position:  relative;
         display: flex;
+        top: 0;
+        width: 90%;
+        height: auto;
+        bottom: 20%;
+        padding: .5em 5% .5em 5%;
+        margin: 0;
+        opacity: 1;
+        transform: translate(0%, 0%);
         justify-content: space-around;
-        list-style-type: none;
+        font-size: 13pt;
     }
-    
-    nav ul li {
-        margin: 20px 0 20px 0;
-        align-items: center;
+
+    #men li {
+        margin: 0;
         display: inline-block;
     }
-    
-    nav ul li :hover {
-        transition: .5s;
-        color: var(--ligGra);
-    }
-    
-    nav ul li a {
-        color: #fff;
-        font-size: 15pt;
-        font-family: var(--sla27);
+
+    #men li:first-child {
+        margin-top: 0;
     }
 }
+
+@media screen and (min-width: 1280px) and (max-width: 8000px) {
+      
+    #hamMen {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 5em;
+        padding: 0;
+    }
+
+    #hamMen input {
+        display: none;
+    }
+
+    #hamMen span {
+        display: none;
+    }
+    
+    #men {
+        position:  relative;
+        display: flex;
+        top: 0;
+        width: 70%;
+        height: auto;
+        bottom: 20%;
+        padding: .5em 15% .5em 15%;
+        margin: 0;
+        opacity: 1;
+        transform: translate(0%, 0%);
+        justify-content: space-around;
+    }
+
+    #men li {
+        margin: 0;
+        display: inline-block;
+    }
+
+    #men li:first-child {
+        margin-top: 0;
+    }
+    
+    #men li a:hover {
+        color: var(--blu);
+    }
+}
+
 
 
 
@@ -287,16 +335,20 @@ main {
     min-height: 75vh;
     padding-top: 25vh;
     color: var(--whi);
-    transform-origin: 100% 0%;
-    transform: translate(0%, 0%);
-    transition: transform .5s ease-in-out;
-}
-
-#wel {
-    position: relative;
     margin-top: 10%;
     margin-left: 1em;
+    animation: wel 2s ease-in-out;
 }
+
+@keyframes wel {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
 
 #wel h1 + h2 {
     line-height: 90%;
@@ -333,6 +385,40 @@ main {
         font-size: 40pt;
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 1179px) {
+    
+    #wel {
+        margin-top: 0;
+    }
+
+    #wel h1 {
+        margin-top: 0;
+        font-size: 8.5em;
+    }
+    
+    #wel h2 {
+        font-size: 6em;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 8000px) {
+    
+    #wel {
+        margin-top: 0;
+    }
+
+    #wel h1 {
+        margin-top: 0;
+        font-size: 15em;
+    }
+    
+    #wel h2 {
+        font-size: 6em;
+        margin-top: -1em;
+    }
+}
 /*************************************
                     first content
 *************************************/
@@ -347,15 +433,13 @@ main {
     flex-direction: column;
 }
 
-#mainCont section {
-    margin: 0 10% 0 10%;
-}
+
 
 #mainCont footer a {
     color: var(--blu);
 }
 
-#mainCont footer {
+#mainCont .container {
     margin: 0 10% 0 10%;
 }
 
@@ -396,8 +480,78 @@ main {
     padding:  0;
 }
 
+@media screen and (min-width: 0px) and (max-width: 480px) {
 
+    .desktop {
+        display: none;
+    }
 
+    .tablet {
+        display: none;
+    }
+
+    
+    #mainCont header {
+        margin: 1.5em 0 0 0;
+    }
+
+    .bodyText {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1179px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 8000px) {
+
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    #mainCont {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    #mainCont .container {
+        margin: 0;
+    }
+
+    .mainAsi {
+        flex: 0 0 50%;
+        box-sizing: border-box;
+        float: right;
+    }
+    
+    .container {
+        flex: 0 0 50%;
+        box-sizing: border-box;
+        margin: 0;
+        float: left; 
+    }
+    
+    .container header {
+        margin: 0; 
+    }
+    
+    .bodyText {
+        margin: 0% 10% 0 10% ;
+    }
+}
 
 /*************************************
                     second content
@@ -412,9 +566,7 @@ main {
     flex-direction: column;
 }
 
-#secCont section {
-    margin: 0 10% 0 10%;
-}
+
 
 #secCont footer a {
     color: var(--blu);
@@ -432,7 +584,7 @@ main {
     margin: 0 10% 0 10%;
 }
 
-#secCont header {
+#secCont header:nth-child(1) {
     line-height: 250%;
     margin: 1.5em 10% 0 10%;
 }
@@ -453,6 +605,38 @@ main {
     line-height: 140%;
     font-weight: 500;
     margin-top: 0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+
+    #secCont .container {
+        margin: 0 10% 0 10%;
+    }
+
+    #secCont header:nth-child(1) {
+        margin: 1.5em 0 0 0;
+    }
+
+    #secCont header {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #secCont footer {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 8000px) {
+
+    #secCont {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    
 }
 
 /*************************************
@@ -564,6 +748,36 @@ main {
     font-size: 20pt;
     color: var(--whi);
     font-family: var(--sla27);
+    transition: 1s;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+
+    
+}
+
+@media screen and (min-width: 1280px) and (max-width: 8000px) {
+
+    .sportContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
+    .sportItem {
+        margin: 2em 0;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .overlayText a:hover p {
+        font-size: 27pt;
+    }
+    
 }
 
 
@@ -584,23 +798,23 @@ main {
     margin: 1em 10% 0 10%;
 }
 
-#refItem header {
+#refCont .container header {
     line-height: 250%;
     margin: 1.5em 10% 0 10%;
 }
 
-#refItem header h3 {
+#refCont .container header h3 {
     margin: 0;
 }
-#refItem header h4 {
+#refCont .container header h4 {
     margin: 1em 0 .2em 0;
 }
 
-#refItem header h5 {
+#refCont .container header h5 {
     margin: .4em 0 .2em 0;
 }
 
-#refItem section p:only-of-type {
+#refCont .container section p:only-of-type {
     font-size: 15pt;
     line-height: 140%;
     font-weight: 500;
@@ -645,6 +859,27 @@ main {
     font-size: 20pt;
     color: var(--whi);
     font-family: var(--sla27);
+    transition: 1s;
+}
+
+
+@media screen and (min-width: 1280px) and (max-width: 8000px) {
+
+    #refCont {
+        flex-direction: row;
+    }
+    
+    #overlayConRef {
+        flex: 0 0 50%;
+    }
+
+    #overlayConRef {
+        box-sizing: border-box;
+        float: right;
+    }
+    #overlayTextRef a:hover p {
+        font-size: 27pt;
+    }
 }
 
 /*************************************
@@ -702,7 +937,7 @@ main {
 
 #conForm fieldset section label {
     display: block;
-    font-family: var(--supLiGra);
+    font-family: var(--nuni);
     font-size: 15pt;
     color: var(--darGra);
 } 
@@ -722,6 +957,40 @@ main {
     color: var(--blu);
     border: #2699fb 3px solid;
     background-color: var(--whi);
+}
+
+@media screen and (min-width: 1280px) and (max-width: 8000px) {
+    
+    #conForm fieldset {
+        margin: 1.5em 30% 4em 30%; 
+        padding: 0 5%;
+    }
+
+    #conForm fieldset section {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #conForm fieldset section label {
+        vertical-align: middle;
+        text-align: right;
+        width: 12%;
+        margin-right: .5em;
+    }
+    
+    #conForm fieldset section input {
+        width: 60%;
+    }
+
+    #conForm fieldset section textarea {
+        vertical-align: top;
+        width: 60%;
+    }
+    
+    #conBut button {
+        margin-left: 13%;
+    }
 }
 
 /*************************************
@@ -811,6 +1080,3 @@ main {
     transform: translate(-150%, 0%);
     transition: transform .5s ease-in-out;
 }
-
-
-

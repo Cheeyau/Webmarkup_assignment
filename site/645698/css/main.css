@@ -45,40 +45,40 @@ body {
 
 h1 {
     font-size: 80pt;
-    font-family: var(--sla27);
+    font-family: 'Slabo 27px', Arial, sans-serif;
 }
 
 h2 {
     font-size: 63pt;
-    font-family: var(--sla27);
+    font-family: 'Slabo 27px', Arial, sans-serif;
 }
 
 h3 {
     font-size: 35pt;
     font-weight: bolder;
-    font-family: var(--sla27);
+    font-family: 'Slabo 27px', Arial, sans-serif;
 }
 
 h4 {
     font-size: 30pt;
     font-weight: 800;
-    font-family: var(--sla27);
+    font-family: 'Slabo 27px', Arial, sans-serif;
 }
 
 h5 {
     font-size: 25pt;
     font-weight: 100;
-    font-family: var(--sla27);
+    font-family: 'Slabo 27px', Arial, sans-serif;
 }
 
 h6 {
     font-size: 15pt;
-    font-family: var(--sla27);
+    font-family: 'Slabo 27px', Arial, sans-serif;
 }
 
 p {
-    color: var(--darGra);
-    font-family: var(--nuni);
+    color: #444;
+    font-family: 'Nunito', Arial, sans-serif;
 }
 
 img {
@@ -146,7 +146,7 @@ a {
     height:.25em;
     margin-bottom: 0.3125em;
     position: relative;
-    background: var(--ligGra);
+    background: #aaa;
     border-radius: 1em;
     z-index: 9000;
     transform-origin: 0.25em 0;
@@ -164,7 +164,7 @@ a {
 #hamMen input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-.125em, -.0625em);
-    background: var(--darGra);
+    background: #444;
 }
 
 #hamMen input:checked ~ span:nth-last-child(3) {
@@ -182,11 +182,11 @@ a {
     height: 100%;
     padding: 3em 0 0 0;
     margin: 0;
-    background-color: var(--bla);
+    background-color: #000;
     opacity: .95;
     list-style:none;
     text-align: center;
-    font-family: var(--sla27);
+    font-family: 'Slabo 27px', Arial, sans-serif;
     font-size: 20pt;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0%);
@@ -208,7 +208,7 @@ a {
 
 #men li a {
     transition: 1s;
-    color: var(--whi);
+    color: #fff;
 }
 @media screen and (min-width: 0px) and (max-width: 480px) {
 
@@ -311,7 +311,7 @@ a {
     }
     
     #men li a:hover {
-        color: var(--blu);
+        color: #2699fb;
     }
 }
 
@@ -334,7 +334,7 @@ main {
     display: block;
     min-height: 75vh;
     padding-top: 25vh;
-    color: var(--whi);
+    color: #fff;
     margin-top: 10%;
     margin-left: 1em;
     animation: wel 2s ease-in-out;
@@ -429,14 +429,14 @@ main {
     width: 100%;
     
     display: flex;
-    background-color: var(--whi);
+    background-color: #fff;
     flex-direction: column;
 }
 
 
 
 #mainCont footer a {
-    color: var(--blu);
+    color: #2699fb;
 }
 
 #mainCont .container {
@@ -575,14 +575,14 @@ main {
     width: 100%;
     margin-top: 15em;
     display: flex;
-    background-color: var(--whi);
+    background-color: #fff;
     flex-direction: column;
 }
 
 
 
 #secCont footer a {
-    color: var(--blu);
+    color: #2699fb;
 }
 
 #secCont footer {
@@ -659,7 +659,7 @@ main {
     width: 100%;
     margin-top: 15em;
     display: flex;
-    background-color: var(--whi);
+    background-color: #fff;
     flex-direction: column;
 }
 
@@ -668,7 +668,7 @@ main {
 }
 
 #sportCont footer a {
-    color: var(--blu);
+    color: #2699fb;
 }
 
 #sportCont footer {
@@ -705,12 +705,12 @@ main {
     padding-top: 1.5em;
     border-radius: .5em;
     margin-top: 4em;
-    background-color: var(--whi);
+    background-color: #fff;
 }
 
 .sportText {
     margin: 0 10% 0 10%;
-    font-family: var(--nuni);
+    font-family: 'Nunito', Arial, sans-serif;
     font-size: 15pt;
     line-height: 140%;
 }
@@ -757,8 +757,8 @@ main {
 .overlayText a p {
     margin: auto;
     font-size: 20pt;
-    color: var(--whi);
-    font-family: var(--sla27);
+    color: #fff;
+    font-family: 'Slabo 27px', Arial, sans-serif;
     transition: 1s;
 }
 
@@ -824,7 +824,7 @@ main {
     width: 100%;
     margin-top: 15em;
     display: flex;
-    background-color: var(--whi);
+    background-color: #fff;
     flex-direction: column;
 }
 
@@ -891,8 +891,8 @@ main {
 #overlayTextRef a p {
     margin: auto;
     font-size: 20pt;
-    color: var(--whi);
-    font-family: var(--sla27);
+    color: #fff;
+    font-family: 'Slabo 27px', Arial, sans-serif;
     transition: 1s;
 }
 
@@ -944,7 +944,7 @@ main {
     width: 100%;
     margin-top: 15em;
     display: flex;
-    background-color: var(--whi);
+    background-color: #fff;
     flex-direction: column;    
 }
 
@@ -956,7 +956,7 @@ main {
 #conTit  {
     font-size: 35pt;
     font-weight: bolder;
-    font-family: var(--sla27);
+    font-family: 'Slabo 27px', Arial, sans-serif;
 }
 
 #conForm fieldset {
@@ -992,16 +992,16 @@ main {
 
 #conForm fieldset section label {
     display: block;
-    font-family: var(--nuni);
+    font-family: 'Nunito', Arial, sans-serif;
     font-size: 15pt;
-    color: var(--darGra);
+    color: #444;
 } 
 
 #conBut button {
-    color: var(--whi);
-    font-family: var(--sla27);
+    color: #fff;
+    font-family: 'Slabo 27px', Arial, sans-serif;
     font-size: 17pt;
-    background-color: var(--blu);
+    background-color: #2699fb;
     border: #fff 3px solid;
     padding: .25em .5em .25em .5em;
     transition: ease-in-out .5s;
@@ -1009,9 +1009,9 @@ main {
 }
 
 #conBut button:hover {
-    color: var(--blu);
+    color: #2699fb;
     border: #2699fb 3px solid;
-    background-color: var(--whi);
+    background-color: #fff;
 }
 
 @media screen and (min-width: 481px) and (max-width: 1279px) {
@@ -1089,7 +1089,7 @@ main {
 #footer {
     width: 100%;
     display: flex;
-    background: var(--darGra);
+    background: #444;
     padding: .5em 0;
 }
 
@@ -1097,7 +1097,7 @@ main {
     display: block;
     font-size: 13pt;
     margin: 0 auto;
-    color: var(--whi);
+    color: #fff;
 }
 
 
@@ -1116,9 +1116,9 @@ main {
     z-index: 4800;
     background-color: rgba(0,0,0,0.9);
     margin: 0;
-    font-family: var(--nuni);
+    font-family: 'Nunito', Arial, sans-serif;
     font-size: 13pt;
-    color: var(--ligGra);
+    color: #aaa;
     line-height: 140%;
     font-weight: 100;
     padding: 1em 10% 3em 10%;
@@ -1131,7 +1131,7 @@ main {
     right: 0;
     bottom: 0;
     z-index: 5000;
-    font-family: var(--sla27);
+    font-family: 'Slabo 27px', Arial, sans-serif;
     font-size: 14pt;
     color: #2699fb;
     padding: 0 10% 0 10%;

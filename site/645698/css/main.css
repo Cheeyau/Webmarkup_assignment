@@ -516,6 +516,10 @@ main {
     .bodyText {
         margin: 0% 10% 0 10% ;
     }
+
+    #mainCont .container .bodyText {
+        margin: 0;
+    }
 }
 
 @media screen and (min-width: 1280px) and (max-width: 8000px) {
